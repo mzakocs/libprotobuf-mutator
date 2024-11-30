@@ -18,7 +18,7 @@ project(LibProtobufMutator CXX)
 enable_language(C)
 enable_language(CXX)
 
-option(LIB_PROTO_MUTATOR_TESTING "Enable test building" ON)
+option(LIB_PROTO_MUTATOR_TESTING "Enable test building" OFF)
 option(LIB_PROTO_MUTATOR_DOWNLOAD_PROTOBUF
        "Automatically download working protobuf" OFF)
 option(LIB_PROTO_MUTATOR_WITH_ASAN "Enable address sanitizer" OFF)
