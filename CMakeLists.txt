@@ -143,10 +143,10 @@ endif()
 
 add_subdirectory(src)
 
-if (NOT "${LIB_PROTO_MUTATOR_FUZZER_LIBRARIES}" STREQUAL "" OR
-    NOT "${FUZZING_FLAGS}" STREQUAL "")
-  add_subdirectory(examples EXCLUDE_FROM_ALL)
-endif()
+#if (NOT "${LIB_PROTO_MUTATOR_FUZZER_LIBRARIES}" STREQUAL "" OR
+    #NOT "${FUZZING_FLAGS}" STREQUAL "")
+  #add_subdirectory(examples EXCLUDE_FROM_ALL)
+#endif()
 
 install(EXPORT libprotobuf-mutatorTargets FILE libprotobuf-mutatorTargets.cmake
   NAMESPACE libprotobuf-mutator:: DESTINATION lib/cmake/libprotobuf-mutator)
